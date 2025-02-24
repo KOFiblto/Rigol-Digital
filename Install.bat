@@ -26,6 +26,16 @@ py -m pip install wheel matplotlib tqdm pyvisa pyvisa-py
 cd /d "%CUR_DIR%\Rigol1000z"
 py -m pip install -e .
 
+:: Installiere PySide6 und die Abhängigkeiten für das Qt-Projekt
+py -m pip install PySide6
+
+:: Optional: Alle Pakete im aktuellen virtuellen Umfeld auflisten
+py -m pip freeze
+
+:: Navigiere zum Qt-Projekt-Ordner und installiere alle Abhängigkeiten
+cd /d "%CUR_DIR%\GUI\Rigol-Digital"
+py -m pip install -r requirements.txt
+
 :: Zurück zum ursprünglichen Verzeichnis
 cd /d "%CUR_DIR%"
 
