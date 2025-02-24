@@ -1,6 +1,6 @@
 # Free Custom Version of AlexZettler's Rigol1000z Repository
 
-This is a free custom version of the Rigol1000z repository: [Rigol1000z](https://github.com/jeanyvesb9/Rigol1000z). It features an `Install.bat` that installs all dependencies and a `Run.bat` that runs the program.
+This is a free custom version, for the private use, of the AlexZettlers repositor,[Rigol1000z](https://github.com/AlexZettler/Rigol1000z), which is a fork of jeanyvesb9s repository [Rigol1000z](https://github.com/jeanyvesb9/Rigol1000z), which is a fork of the original from jtambasco [RigolOscilloscope](https://github.com/jtambasco/RigolOscilloscope). It features an `Install.bat` that installs all dependencies and a `Run.bat` that runs the program.
 
 ## Install Guide:
 
