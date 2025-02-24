@@ -27,6 +27,19 @@ This is a free custom version, for the private use, of the AlexZettlers reposito
 3) Input the IP into the code that is displayed, in Row 14
 4) On the top click Run -> Run Method
 
+### 9) Input IP of Oscilloscope
+
+#### Read IP from Oscilloscope:
+1. Utility -> EA Settings -> LAN Settings -> Config -> Enable DHCP
+
+#### Set IP in Program:
+1. Start `Run.bat`
+2. Go to line 14 and enter IP in that line:
+   ```python
+   instrument = rm.open_resource("TCPIP0::172.16.62.104::INSTR")
+                                                \___________/
+                                                Input IP here
+
 
 
 ## Lizense of jeanyvesb9:
