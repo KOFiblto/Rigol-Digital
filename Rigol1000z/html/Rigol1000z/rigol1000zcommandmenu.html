@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.4" />
+<title>Rigol1000z.rigol1000zcommandmenu API documentation</title>
+<meta name="description" content="This module contains menu hierarchy abstractions." />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>Rigol1000z.rigol1000zcommandmenu</code></h1>
+</header>
+<section id="section-intro">
+<p>This module contains menu hierarchy abstractions.</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">&#34;&#34;&#34;
+This module contains menu hierarchy abstractions.
+&#34;&#34;&#34;
+
+import pyvisa as _visa
+from Rigol1000z.constants import *
+
+
+class CommandMenu:
+    &#34;&#34;&#34;
+    This class defines a visa menu hierarchy and interfaces to call commands from
+    Adds a common pre-command branch string in order to ease writing of menus
+    &#34;&#34;&#34;
+
+    cmd_hierarchy_str: str = &#34;&#34;
+    &#34;&#34;&#34;
+    The menu hierarchy to call commands from
+    &#34;&#34;&#34;
+
+    def __init__(self, visa_resource: _visa.Resource):
+        self.visa_resource: _visa.Resource = visa_resource
+
+    def visa_write(self, cmd: str):
+        self.visa_resource.write(self.cmd_hierarchy_str + cmd)
+
+    def visa_read(self) -&gt; str:
+        return self.visa_resource.read().strip()
+
+    def visa_read_raw(self, num_bytes: int = -1):
+        return self.visa_resource.read_raw(num_bytes)
+
+    def visa_ask(self, cmd: str):
+        return self.visa_resource.query(self.cmd_hierarchy_str + cmd)
+
+    def visa_ask_raw(self, cmd: str, num_bytes: int = -1):
+        self.visa_write(self.cmd_hierarchy_str + cmd)
+        return self.visa_read_raw(num_bytes)
+
+
+class Rigol1000zCommandMenu(CommandMenu):
+    &#34;&#34;&#34;
+    Adds additional checks and features exclusive to the Rigol1000z series of scopes
+    &#34;&#34;&#34;
+
+    def __init__(self, visa_resource, idn: str = None):
+        super().__init__(visa_resource)
+
+        if (idn is not None) and (type(idn) is str):
+            self._idn_cache: str = idn
+
+        else:
+            # Cache the device&#39;s identifier
+            self._idn_cache: str = self.visa_resource.query(&#34;*IDN?&#34;)
+
+    @property
+    def osc_model(self) -&gt; str:
+        brand, model, serial_number, software_version, *additional_args = self._idn_cache.split(&#34;,&#34;)
+        return model
+
+    @property
+    def has_digital(self) -&gt; bool:
+        &#34;&#34;&#34;
+        Does the model have digital channels
+
+        Returns
+        -------
+        bool
+            Does the scope have digital channel support
+        &#34;&#34;&#34;
+        # Plus models supports digital channels
+        return self.osc_model in {
+            ScopeModel.DS1104Z_S_Plus, ScopeModel.DS1074Z_S_Plus,
+            ScopeModel.DS1104Z_Plus, ScopeModel.DS1074Z_Plus}
+
+    @staticmethod
+    def source_valid(source: str, digital_valid: bool, ch_valid: bool, math_valid: bool) -&gt; bool:
+        &#34;&#34;&#34;
+        Given the source string and what channels are valid returns if the source is valid
+
+        Parameters
+        ----------
+        source: str
+            The source string to check
+        digital_valid: bool
+            Is a digital source valid
+        ch_valid: bool
+            Is a channel source valid
+        math_valid: bool
+            Is a math source valid
+
+        Returns
+        -------
+        bool
+            A boolean indicating if the source is valid
+        &#34;&#34;&#34;
+        if digital_valid and source in sources_digital:
+            return True
+        elif ch_valid and source in sources_analog:
+            return True
+        elif math_valid and source in sources_math:
+            return True
+
+        # If source any other value
+        return False
+
+    @property
+    def rated_frequency(self) -&gt; float:
+        &#34;&#34;&#34;
+        Get the rated frequency from the oscilloscope model
+
+        Returns
+        -------
+        float
+            The rated frequency(Hz) of the model
+        &#34;&#34;&#34;
+        osc_model = self.osc_model
+
+        if osc_model in {ScopeModel.DS1104Z_S_Plus, ScopeModel.DS1104Z_Plus}:
+            return 100.0 * 10 ** 6  # 100MHz
+        elif osc_model in {ScopeModel.DS1074Z_S_Plus, ScopeModel.DS1074Z_Plus}:
+            return 70.0 * 10 ** 6  # 70MHz
+        elif osc_model in {ScopeModel.DS1054Z}:
+            return 50.0 * 10 ** 6  # 50MHz
+        elif osc_model in {ScopeModel.DS1104Z}:
+            print(&#34;You cheeky bastard&#34;)
+            return 50.0 * 10 ** 6  # 50MHz
+        else:
+            raise ValueError(f&#34;Invalid model: {osc_model}&#34;)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="Rigol1000z.rigol1000zcommandmenu.CommandMenu"><code class="flex name class">
+<span>class <span class="ident">CommandMenu</span></span>
+<span>(</span><span>visa_resource: pyvisa.resources.resource.Resource)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This class defines a visa menu hierarchy and interfaces to call commands from
+Adds a common pre-command branch string in order to ease writing of menus</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class CommandMenu:
+    &#34;&#34;&#34;
+    This class defines a visa menu hierarchy and interfaces to call commands from
+    Adds a common pre-command branch string in order to ease writing of menus
+    &#34;&#34;&#34;
+
+    cmd_hierarchy_str: str = &#34;&#34;
+    &#34;&#34;&#34;
+    The menu hierarchy to call commands from
+    &#34;&#34;&#34;
+
+    def __init__(self, visa_resource: _visa.Resource):
+        self.visa_resource: _visa.Resource = visa_resource
+
+    def visa_write(self, cmd: str):
+        self.visa_resource.write(self.cmd_hierarchy_str + cmd)
+
+    def visa_read(self) -&gt; str:
+        return self.visa_resource.read().strip()
+
+    def visa_read_raw(self, num_bytes: int = -1):
+        return self.visa_resource.read_raw(num_bytes)
+
+    def visa_ask(self, cmd: str):
+        return self.visa_resource.query(self.cmd_hierarchy_str + cmd)
+
+    def visa_ask_raw(self, cmd: str, num_bytes: int = -1):
+        self.visa_write(self.cmd_hierarchy_str + cmd)
+        return self.visa_read_raw(num_bytes)</code></pre>
+</details>
+<h3>Subclasses</h3>
+<ul class="hlist">
+<li><a title="Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu" href="#Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu">Rigol1000zCommandMenu</a></li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.rigol1000zcommandmenu.CommandMenu.cmd_hierarchy_str"><code class="name">var <span class="ident">cmd_hierarchy_str</span> : str</code></dt>
+<dd>
+<div class="desc"><p>The menu hierarchy to call commands from</p></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_ask"><code class="name flex">
+<span>def <span class="ident">visa_ask</span></span>(<span>self, cmd: str)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def visa_ask(self, cmd: str):
+    return self.visa_resource.query(self.cmd_hierarchy_str + cmd)</code></pre>
+</details>
+</dd>
+<dt id="Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_ask_raw"><code class="name flex">
+<span>def <span class="ident">visa_ask_raw</span></span>(<span>self, cmd: str, num_bytes: int = -1)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def visa_ask_raw(self, cmd: str, num_bytes: int = -1):
+    self.visa_write(self.cmd_hierarchy_str + cmd)
+    return self.visa_read_raw(num_bytes)</code></pre>
+</details>
+</dd>
+<dt id="Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_read"><code class="name flex">
+<span>def <span class="ident">visa_read</span></span>(<span>self) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def visa_read(self) -&gt; str:
+    return self.visa_resource.read().strip()</code></pre>
+</details>
+</dd>
+<dt id="Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_read_raw"><code class="name flex">
+<span>def <span class="ident">visa_read_raw</span></span>(<span>self, num_bytes: int = -1)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def visa_read_raw(self, num_bytes: int = -1):
+    return self.visa_resource.read_raw(num_bytes)</code></pre>
+</details>
+</dd>
+<dt id="Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_write"><code class="name flex">
+<span>def <span class="ident">visa_write</span></span>(<span>self, cmd: str)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def visa_write(self, cmd: str):
+    self.visa_resource.write(self.cmd_hierarchy_str + cmd)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu"><code class="flex name class">
+<span>class <span class="ident">Rigol1000zCommandMenu</span></span>
+<span>(</span><span>visa_resource, idn: str = None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Adds additional checks and features exclusive to the Rigol1000z series of scopes</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Rigol1000zCommandMenu(CommandMenu):
+    &#34;&#34;&#34;
+    Adds additional checks and features exclusive to the Rigol1000z series of scopes
+    &#34;&#34;&#34;
+
+    def __init__(self, visa_resource, idn: str = None):
+        super().__init__(visa_resource)
+
+        if (idn is not None) and (type(idn) is str):
+            self._idn_cache: str = idn
+
+        else:
+            # Cache the device&#39;s identifier
+            self._idn_cache: str = self.visa_resource.query(&#34;*IDN?&#34;)
+
+    @property
+    def osc_model(self) -&gt; str:
+        brand, model, serial_number, software_version, *additional_args = self._idn_cache.split(&#34;,&#34;)
+        return model
+
+    @property
+    def has_digital(self) -&gt; bool:
+        &#34;&#34;&#34;
+        Does the model have digital channels
+
+        Returns
+        -------
+        bool
+            Does the scope have digital channel support
+        &#34;&#34;&#34;
+        # Plus models supports digital channels
+        return self.osc_model in {
+            ScopeModel.DS1104Z_S_Plus, ScopeModel.DS1074Z_S_Plus,
+            ScopeModel.DS1104Z_Plus, ScopeModel.DS1074Z_Plus}
+
+    @staticmethod
+    def source_valid(source: str, digital_valid: bool, ch_valid: bool, math_valid: bool) -&gt; bool:
+        &#34;&#34;&#34;
+        Given the source string and what channels are valid returns if the source is valid
+
+        Parameters
+        ----------
+        source: str
+            The source string to check
+        digital_valid: bool
+            Is a digital source valid
+        ch_valid: bool
+            Is a channel source valid
+        math_valid: bool
+            Is a math source valid
+
+        Returns
+        -------
+        bool
+            A boolean indicating if the source is valid
+        &#34;&#34;&#34;
+        if digital_valid and source in sources_digital:
+            return True
+        elif ch_valid and source in sources_analog:
+            return True
+        elif math_valid and source in sources_math:
+            return True
+
+        # If source any other value
+        return False
+
+    @property
+    def rated_frequency(self) -&gt; float:
+        &#34;&#34;&#34;
+        Get the rated frequency from the oscilloscope model
+
+        Returns
+        -------
+        float
+            The rated frequency(Hz) of the model
+        &#34;&#34;&#34;
+        osc_model = self.osc_model
+
+        if osc_model in {ScopeModel.DS1104Z_S_Plus, ScopeModel.DS1104Z_Plus}:
+            return 100.0 * 10 ** 6  # 100MHz
+        elif osc_model in {ScopeModel.DS1074Z_S_Plus, ScopeModel.DS1074Z_Plus}:
+            return 70.0 * 10 ** 6  # 70MHz
+        elif osc_model in {ScopeModel.DS1054Z}:
+            return 50.0 * 10 ** 6  # 50MHz
+        elif osc_model in {ScopeModel.DS1104Z}:
+            print(&#34;You cheeky bastard&#34;)
+            return 50.0 * 10 ** 6  # 50MHz
+        else:
+            raise ValueError(f&#34;Invalid model: {osc_model}&#34;)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="Rigol1000z.rigol1000zcommandmenu.CommandMenu" href="#Rigol1000z.rigol1000zcommandmenu.CommandMenu">CommandMenu</a></li>
+</ul>
+<h3>Subclasses</h3>
+<ul class="hlist">
+<li><a title="Rigol1000z.commands.Acquire" href="commands.html#Rigol1000z.commands.Acquire">Acquire</a></li>
+<li><a title="Rigol1000z.commands.Calibrate" href="commands.html#Rigol1000z.commands.Calibrate">Calibrate</a></li>
+<li><a title="Rigol1000z.commands.Channel" href="commands.html#Rigol1000z.commands.Channel">Channel</a></li>
+<li><a title="Rigol1000z.commands.Cursor" href="commands.html#Rigol1000z.commands.Cursor">Cursor</a></li>
+<li><a title="Rigol1000z.commands.Decoder" href="commands.html#Rigol1000z.commands.Decoder">Decoder</a></li>
+<li><a title="Rigol1000z.commands.Display" href="commands.html#Rigol1000z.commands.Display">Display</a></li>
+<li><a title="Rigol1000z.commands.EventTable" href="commands.html#Rigol1000z.commands.EventTable">EventTable</a></li>
+<li><a title="Rigol1000z.commands.Function" href="commands.html#Rigol1000z.commands.Function">Function</a></li>
+<li><a title="Rigol1000z.commands.IEEE488" href="commands.html#Rigol1000z.commands.IEEE488">IEEE488</a></li>
+<li><a title="Rigol1000z.commands.LA" href="commands.html#Rigol1000z.commands.LA">LA</a></li>
+<li><a title="Rigol1000z.commands.LAN" href="commands.html#Rigol1000z.commands.LAN">LAN</a></li>
+<li><a title="Rigol1000z.commands.Mask" href="commands.html#Rigol1000z.commands.Mask">Mask</a></li>
+<li><a title="Rigol1000z.commands.Math" href="commands.html#Rigol1000z.commands.Math">Math</a></li>
+<li><a title="Rigol1000z.commands.Measure" href="commands.html#Rigol1000z.commands.Measure">Measure</a></li>
+<li><a title="Rigol1000z.commands.MeasureCounter" href="commands.html#Rigol1000z.commands.MeasureCounter">MeasureCounter</a></li>
+<li><a title="Rigol1000z.commands.MeasureSetup" href="commands.html#Rigol1000z.commands.MeasureSetup">MeasureSetup</a></li>
+<li><a title="Rigol1000z.commands.MeasurementItem" href="commands.html#Rigol1000z.commands.MeasurementItem">MeasurementItem</a></li>
+<li><a title="Rigol1000z.commands.MeasurementStatistic" href="commands.html#Rigol1000z.commands.MeasurementStatistic">MeasurementStatistic</a></li>
+<li><a title="Rigol1000z.commands.MeasurementStatisticItem" href="commands.html#Rigol1000z.commands.MeasurementStatisticItem">MeasurementStatisticItem</a></li>
+<li><a title="Rigol1000z.commands.Reference" href="commands.html#Rigol1000z.commands.Reference">Reference</a></li>
+<li><a title="Rigol1000z.commands.Source" href="commands.html#Rigol1000z.commands.Source">Source</a></li>
+<li><a title="Rigol1000z.commands.Storage" href="commands.html#Rigol1000z.commands.Storage">Storage</a></li>
+<li><a title="Rigol1000z.commands.System" href="commands.html#Rigol1000z.commands.System">System</a></li>
+<li><a title="Rigol1000z.commands.Timebase" href="commands.html#Rigol1000z.commands.Timebase">Timebase</a></li>
+<li><a title="Rigol1000z.commands.TimebaseDelay" href="commands.html#Rigol1000z.commands.TimebaseDelay">TimebaseDelay</a></li>
+<li><a title="Rigol1000z.commands.Trace" href="commands.html#Rigol1000z.commands.Trace">Trace</a></li>
+<li><a title="Rigol1000z.commands.Trigger" href="commands.html#Rigol1000z.commands.Trigger">Trigger</a></li>
+<li><a title="Rigol1000z.commands.TriggerEdge" href="commands.html#Rigol1000z.commands.TriggerEdge">TriggerEdge</a></li>
+<li><a title="Rigol1000z.commands.Waveform" href="commands.html#Rigol1000z.commands.Waveform">Waveform</a></li>
+<li><a title="Rigol1000z.rigol1000z.Rigol1000z" href="rigol1000z.html#Rigol1000z.rigol1000z.Rigol1000z">Rigol1000z</a></li>
+</ul>
+<h3>Static methods</h3>
+<dl>
+<dt id="Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu.source_valid"><code class="name flex">
+<span>def <span class="ident">source_valid</span></span>(<span>source: str, digital_valid: bool, ch_valid: bool, math_valid: bool) ‑> bool</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Given the source string and what channels are valid returns if the source is valid</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>source</code></strong> :&ensp;<code>str</code></dt>
+<dd>The source string to check</dd>
+<dt><strong><code>digital_valid</code></strong> :&ensp;<code>bool</code></dt>
+<dd>Is a digital source valid</dd>
+<dt><strong><code>ch_valid</code></strong> :&ensp;<code>bool</code></dt>
+<dd>Is a channel source valid</dd>
+<dt><strong><code>math_valid</code></strong> :&ensp;<code>bool</code></dt>
+<dd>Is a math source valid</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>bool</code></dt>
+<dd>A boolean indicating if the source is valid</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@staticmethod
+def source_valid(source: str, digital_valid: bool, ch_valid: bool, math_valid: bool) -&gt; bool:
+    &#34;&#34;&#34;
+    Given the source string and what channels are valid returns if the source is valid
+
+    Parameters
+    ----------
+    source: str
+        The source string to check
+    digital_valid: bool
+        Is a digital source valid
+    ch_valid: bool
+        Is a channel source valid
+    math_valid: bool
+        Is a math source valid
+
+    Returns
+    -------
+    bool
+        A boolean indicating if the source is valid
+    &#34;&#34;&#34;
+    if digital_valid and source in sources_digital:
+        return True
+    elif ch_valid and source in sources_analog:
+        return True
+    elif math_valid and source in sources_math:
+        return True
+
+    # If source any other value
+    return False</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Instance variables</h3>
+<dl>
+<dt id="Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu.has_digital"><code class="name">var <span class="ident">has_digital</span> : bool</code></dt>
+<dd>
+<div class="desc"><p>Does the model have digital channels</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>bool</code></dt>
+<dd>Does the scope have digital channel support</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def has_digital(self) -&gt; bool:
+    &#34;&#34;&#34;
+    Does the model have digital channels
+
+    Returns
+    -------
+    bool
+        Does the scope have digital channel support
+    &#34;&#34;&#34;
+    # Plus models supports digital channels
+    return self.osc_model in {
+        ScopeModel.DS1104Z_S_Plus, ScopeModel.DS1074Z_S_Plus,
+        ScopeModel.DS1104Z_Plus, ScopeModel.DS1074Z_Plus}</code></pre>
+</details>
+</dd>
+<dt id="Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu.osc_model"><code class="name">var <span class="ident">osc_model</span> : str</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def osc_model(self) -&gt; str:
+    brand, model, serial_number, software_version, *additional_args = self._idn_cache.split(&#34;,&#34;)
+    return model</code></pre>
+</details>
+</dd>
+<dt id="Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu.rated_frequency"><code class="name">var <span class="ident">rated_frequency</span> : float</code></dt>
+<dd>
+<div class="desc"><p>Get the rated frequency from the oscilloscope model</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float</code></dt>
+<dd>The rated frequency(Hz) of the model</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def rated_frequency(self) -&gt; float:
+    &#34;&#34;&#34;
+    Get the rated frequency from the oscilloscope model
+
+    Returns
+    -------
+    float
+        The rated frequency(Hz) of the model
+    &#34;&#34;&#34;
+    osc_model = self.osc_model
+
+    if osc_model in {ScopeModel.DS1104Z_S_Plus, ScopeModel.DS1104Z_Plus}:
+        return 100.0 * 10 ** 6  # 100MHz
+    elif osc_model in {ScopeModel.DS1074Z_S_Plus, ScopeModel.DS1074Z_Plus}:
+        return 70.0 * 10 ** 6  # 70MHz
+    elif osc_model in {ScopeModel.DS1054Z}:
+        return 50.0 * 10 ** 6  # 50MHz
+    elif osc_model in {ScopeModel.DS1104Z}:
+        print(&#34;You cheeky bastard&#34;)
+        return 50.0 * 10 ** 6  # 50MHz
+    else:
+        raise ValueError(f&#34;Invalid model: {osc_model}&#34;)</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="Rigol1000z.rigol1000zcommandmenu.CommandMenu" href="#Rigol1000z.rigol1000zcommandmenu.CommandMenu">CommandMenu</a></b></code>:
+<ul class="hlist">
+<li><code><a title="Rigol1000z.rigol1000zcommandmenu.CommandMenu.cmd_hierarchy_str" href="#Rigol1000z.rigol1000zcommandmenu.CommandMenu.cmd_hierarchy_str">cmd_hierarchy_str</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="Rigol1000z" href="index.html">Rigol1000z</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="Rigol1000z.rigol1000zcommandmenu.CommandMenu" href="#Rigol1000z.rigol1000zcommandmenu.CommandMenu">CommandMenu</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Rigol1000z.rigol1000zcommandmenu.CommandMenu.cmd_hierarchy_str" href="#Rigol1000z.rigol1000zcommandmenu.CommandMenu.cmd_hierarchy_str">cmd_hierarchy_str</a></code></li>
+<li><code><a title="Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_ask" href="#Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_ask">visa_ask</a></code></li>
+<li><code><a title="Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_ask_raw" href="#Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_ask_raw">visa_ask_raw</a></code></li>
+<li><code><a title="Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_read" href="#Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_read">visa_read</a></code></li>
+<li><code><a title="Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_read_raw" href="#Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_read_raw">visa_read_raw</a></code></li>
+<li><code><a title="Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_write" href="#Rigol1000z.rigol1000zcommandmenu.CommandMenu.visa_write">visa_write</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu" href="#Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu">Rigol1000zCommandMenu</a></code></h4>
+<ul class="">
+<li><code><a title="Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu.has_digital" href="#Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu.has_digital">has_digital</a></code></li>
+<li><code><a title="Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu.osc_model" href="#Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu.osc_model">osc_model</a></code></li>
+<li><code><a title="Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu.rated_frequency" href="#Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu.rated_frequency">rated_frequency</a></code></li>
+<li><code><a title="Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu.source_valid" href="#Rigol1000z.rigol1000zcommandmenu.Rigol1000zCommandMenu.source_valid">source_valid</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.4</a>.</p>
+</footer>
+</body>
+</html>

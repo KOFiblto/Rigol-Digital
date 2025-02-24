@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+Rigol1000z.egg-info/PKG-INFO
+Rigol1000z.egg-info/SOURCES.txt
+Rigol1000z.egg-info/dependency_links.txt
+Rigol1000z.egg-info/top_level.txt
+rigol1000z/__init__.py
+rigol1000z/commands.py
+rigol1000z/constants.py
+rigol1000z/rigol1000z.py
+rigol1000z/rigol1000zcommandmenu.py

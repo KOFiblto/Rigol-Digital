@@ -1,0 +1,1160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.4" />
+<title>Rigol1000z.constants API documentation</title>
+<meta name="description" content="This module contains definitions for string constants used to communicate with Rigol100z series oscilloscopes." />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>Rigol1000z.constants</code></h1>
+</header>
+<section id="section-intro">
+<p>This module contains definitions for string constants used to communicate with Rigol100z series oscilloscopes.</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">&#34;&#34;&#34;
+This module contains definitions for string constants used to communicate with Rigol100z series oscilloscopes.
+&#34;&#34;&#34;
+
+
+class ScopeModel:
+    DS1104Z_S_Plus = &#34;DS1104Z-S Plus&#34;
+    DS1074Z_S_Plus = &#34;DS1074Z-S Plus&#34;
+    DS1104Z_Plus = &#34;DS1104Z Plus&#34;
+    DS1104Z = &#34;DS1104Z&#34;  # Hacked model
+    DS1074Z_Plus = &#34;DS1074Z Plus&#34;
+    DS1054Z = &#34;DS1054Z&#34;
+
+
+class EAcquireMode:
+    Normal = &#34;NORM&#34;
+    Averages = &#34;AVER&#34;
+    Peak = &#34;PEAK&#34;
+    HighResolution = &#34;HRES&#34;
+
+
+class EDisplayMode:
+    Vectors = &#34;VEC&#34;
+    Dots = &#34;DOTS&#34;
+
+
+class EDisplayGrid:
+    Full = &#34;FULL&#34;
+    Half = &#34;HALF&#34;
+    NoGrid = &#34;NONE&#34;
+
+
+class EEventtableFormat:
+    Hex = &#34;HEX&#34;
+    Ascii = &#34;ASC&#34;
+    Decimal = &#34;DEC&#34;
+
+
+class EEventtableViewFormat:
+    Package = &#34;PACK&#34;
+    Detail = &#34;DET&#34;
+    Payload = &#34;PAYL&#34;
+
+
+class EEventtableColumn:
+    Data = &#34;DATA&#34;
+    Tx = &#34;TX&#34;
+    Rx = &#34;RX&#34;
+    MISO = &#34;MISO&#34;
+    MOSI = &#34;MOSI&#34;
+
+
+class EMeasureStatisticMode:
+    Difference = &#34;DIFF&#34;
+    Extremum = &#34;EXTR&#34;
+
+
+class EMeasureItem:
+    VoltageMax = &#34;VMAX&#34;
+    VoltageMin = &#34;VMIN&#34;
+    VoltagePeakToPeak = &#34;VPP&#34;
+    VoltageTop = &#34;VTOP&#34;
+    VoltageBase = &#34;VBASe&#34;
+    VoltageAmplitude = &#34;VAMP&#34;
+
+    VoltageUpper = &#34;VUP&#34;
+    VoltageMid = &#34;VMID&#34;
+    VoltageLower = &#34;VLOW&#34;
+    VoltageAverage = &#34;VAVG&#34;
+
+    VoltageRMS = &#34;VRMS&#34;
+    VRmsPeriod = &#34;PVRMS&#34;
+
+    VoltageOvershoot = &#34;OVER&#34;
+    VoltagePreshoot = &#34;PRES&#34;
+
+    Area = &#34;MAR&#34;
+    AreaPeriod = &#34;MPAR&#34;
+
+    Period = &#34;PER&#34;
+
+    Frequency = &#34;FREQ&#34;
+
+    RiseTime = &#34;RTIM&#34;
+    FallTime = &#34;FTIM&#34;
+
+    WidthPositive = &#34;PWID&#34;
+    WidthNegative = &#34;NWID&#34;
+
+    DutyPositive = &#34;PDUT&#34;
+    DutyNegative = &#34;NDUT&#34;
+
+    DelayRise = &#34;RDEL&#34;
+    DelayFall = &#34;FDEL&#34;
+
+    PhaseRise = &#34;RPH&#34;
+    PhaseFall = &#34;FPH&#34;
+
+    TVMax = &#34;TVMAX&#34;  # time to voltage max?
+    TVMin = &#34;TVMIN&#34;  # time to voltage min?
+
+    SlewRatePositive = &#34;PSLEW&#34;
+    SlewRateNegative = &#34;NSLEW&#34;
+
+    Variance = &#34;VARI&#34;
+
+    PulsesPositive = &#34;PPUL&#34;
+    PulsesNegative = &#34;NPUL&#34;
+    EdgesPositive = &#34;PEDG&#34;
+    EdgesNegative = &#34;NEDG&#34;
+
+
+class EMeasurementStatisticItemType:
+    Maximum = &#34;MAX&#34;
+    Minimum = &#34;MIN&#34;
+    Current = &#34;CURR&#34;
+    Average = &#34;AVER&#34;
+    Deviation = &#34;DEV&#34;
+
+
+class ETimebaseMode:
+    Main = &#39;main&#39;
+    XY = &#39;xy&#39;
+    Roll = &#39;roll&#39;
+
+
+class ESource:
+    D0 = &#34;D0&#34;
+    D1 = &#34;D1&#34;
+    D2 = &#34;D2&#34;
+    D3 = &#34;D3&#34;
+    D4 = &#34;D4&#34;
+    D5 = &#34;D5&#34;
+    D6 = &#34;D6&#34;
+    D7 = &#34;D7&#34;
+    D8 = &#34;D8&#34;
+    D9 = &#34;D9&#34;
+    D10 = &#34;D10&#34;
+    D11 = &#34;D11&#34;
+    D12 = &#34;D12&#34;
+    D13 = &#34;D13&#34;
+    D14 = &#34;D14&#34;
+    D15 = &#34;D15&#34;
+
+    Ch1 = &#34;CHAN1&#34;
+    Ch2 = &#34;CHAN2&#34;
+    Ch3 = &#34;CHAN3&#34;
+    Ch4 = &#34;CHAN4&#34;
+
+    Math = &#34;MATH&#34;
+
+
+sources_digital = {
+    ESource.D0,
+    ESource.D1,
+    ESource.D2,
+    ESource.D3,
+    ESource.D4,
+    ESource.D5,
+    ESource.D6,
+    ESource.D7,
+    ESource.D8,
+    ESource.D9,
+    ESource.D10,
+    ESource.D11,
+    ESource.D12,
+    ESource.D13,
+    ESource.D14,
+    ESource.D15,
+}
+
+sources_analog = {
+    ESource.Ch1,
+    ESource.Ch2,
+    ESource.Ch3,
+    ESource.Ch4,
+}
+
+sources_math = {&#34;MATH&#34;}
+
+
+class EWaveformMode:
+    Normal = &#34;NORM&#34;
+    Max = &#34;MAX&#34;
+    Raw = &#34;RAW&#34;
+
+
+waveform_modes = {EWaveformMode.Normal, EWaveformMode.Max, EWaveformMode.Raw}
+
+
+class EWaveformReadFormat:
+    Word = &#34;WORD&#34;
+    Byte = &#34;BYTE&#34;
+    Ascii = &#34;ASC&#34;
+
+
+waveform_read_formats = {EWaveformReadFormat.Word, EWaveformReadFormat.Byte, EWaveformReadFormat.Ascii}</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="Rigol1000z.constants.EAcquireMode"><code class="flex name class">
+<span>class <span class="ident">EAcquireMode</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class EAcquireMode:
+    Normal = &#34;NORM&#34;
+    Averages = &#34;AVER&#34;
+    Peak = &#34;PEAK&#34;
+    HighResolution = &#34;HRES&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.constants.EAcquireMode.Averages"><code class="name">var <span class="ident">Averages</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EAcquireMode.HighResolution"><code class="name">var <span class="ident">HighResolution</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EAcquireMode.Normal"><code class="name">var <span class="ident">Normal</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EAcquireMode.Peak"><code class="name">var <span class="ident">Peak</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Rigol1000z.constants.EDisplayGrid"><code class="flex name class">
+<span>class <span class="ident">EDisplayGrid</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class EDisplayGrid:
+    Full = &#34;FULL&#34;
+    Half = &#34;HALF&#34;
+    NoGrid = &#34;NONE&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.constants.EDisplayGrid.Full"><code class="name">var <span class="ident">Full</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EDisplayGrid.Half"><code class="name">var <span class="ident">Half</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EDisplayGrid.NoGrid"><code class="name">var <span class="ident">NoGrid</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Rigol1000z.constants.EDisplayMode"><code class="flex name class">
+<span>class <span class="ident">EDisplayMode</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class EDisplayMode:
+    Vectors = &#34;VEC&#34;
+    Dots = &#34;DOTS&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.constants.EDisplayMode.Dots"><code class="name">var <span class="ident">Dots</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EDisplayMode.Vectors"><code class="name">var <span class="ident">Vectors</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Rigol1000z.constants.EEventtableColumn"><code class="flex name class">
+<span>class <span class="ident">EEventtableColumn</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class EEventtableColumn:
+    Data = &#34;DATA&#34;
+    Tx = &#34;TX&#34;
+    Rx = &#34;RX&#34;
+    MISO = &#34;MISO&#34;
+    MOSI = &#34;MOSI&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.constants.EEventtableColumn.Data"><code class="name">var <span class="ident">Data</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EEventtableColumn.MISO"><code class="name">var <span class="ident">MISO</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EEventtableColumn.MOSI"><code class="name">var <span class="ident">MOSI</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EEventtableColumn.Rx"><code class="name">var <span class="ident">Rx</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EEventtableColumn.Tx"><code class="name">var <span class="ident">Tx</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Rigol1000z.constants.EEventtableFormat"><code class="flex name class">
+<span>class <span class="ident">EEventtableFormat</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class EEventtableFormat:
+    Hex = &#34;HEX&#34;
+    Ascii = &#34;ASC&#34;
+    Decimal = &#34;DEC&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.constants.EEventtableFormat.Ascii"><code class="name">var <span class="ident">Ascii</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EEventtableFormat.Decimal"><code class="name">var <span class="ident">Decimal</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EEventtableFormat.Hex"><code class="name">var <span class="ident">Hex</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Rigol1000z.constants.EEventtableViewFormat"><code class="flex name class">
+<span>class <span class="ident">EEventtableViewFormat</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class EEventtableViewFormat:
+    Package = &#34;PACK&#34;
+    Detail = &#34;DET&#34;
+    Payload = &#34;PAYL&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.constants.EEventtableViewFormat.Detail"><code class="name">var <span class="ident">Detail</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EEventtableViewFormat.Package"><code class="name">var <span class="ident">Package</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EEventtableViewFormat.Payload"><code class="name">var <span class="ident">Payload</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem"><code class="flex name class">
+<span>class <span class="ident">EMeasureItem</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class EMeasureItem:
+    VoltageMax = &#34;VMAX&#34;
+    VoltageMin = &#34;VMIN&#34;
+    VoltagePeakToPeak = &#34;VPP&#34;
+    VoltageTop = &#34;VTOP&#34;
+    VoltageBase = &#34;VBASe&#34;
+    VoltageAmplitude = &#34;VAMP&#34;
+
+    VoltageUpper = &#34;VUP&#34;
+    VoltageMid = &#34;VMID&#34;
+    VoltageLower = &#34;VLOW&#34;
+    VoltageAverage = &#34;VAVG&#34;
+
+    VoltageRMS = &#34;VRMS&#34;
+    VRmsPeriod = &#34;PVRMS&#34;
+
+    VoltageOvershoot = &#34;OVER&#34;
+    VoltagePreshoot = &#34;PRES&#34;
+
+    Area = &#34;MAR&#34;
+    AreaPeriod = &#34;MPAR&#34;
+
+    Period = &#34;PER&#34;
+
+    Frequency = &#34;FREQ&#34;
+
+    RiseTime = &#34;RTIM&#34;
+    FallTime = &#34;FTIM&#34;
+
+    WidthPositive = &#34;PWID&#34;
+    WidthNegative = &#34;NWID&#34;
+
+    DutyPositive = &#34;PDUT&#34;
+    DutyNegative = &#34;NDUT&#34;
+
+    DelayRise = &#34;RDEL&#34;
+    DelayFall = &#34;FDEL&#34;
+
+    PhaseRise = &#34;RPH&#34;
+    PhaseFall = &#34;FPH&#34;
+
+    TVMax = &#34;TVMAX&#34;  # time to voltage max?
+    TVMin = &#34;TVMIN&#34;  # time to voltage min?
+
+    SlewRatePositive = &#34;PSLEW&#34;
+    SlewRateNegative = &#34;NSLEW&#34;
+
+    Variance = &#34;VARI&#34;
+
+    PulsesPositive = &#34;PPUL&#34;
+    PulsesNegative = &#34;NPUL&#34;
+    EdgesPositive = &#34;PEDG&#34;
+    EdgesNegative = &#34;NEDG&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.constants.EMeasureItem.Area"><code class="name">var <span class="ident">Area</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.AreaPeriod"><code class="name">var <span class="ident">AreaPeriod</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.DelayFall"><code class="name">var <span class="ident">DelayFall</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.DelayRise"><code class="name">var <span class="ident">DelayRise</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.DutyNegative"><code class="name">var <span class="ident">DutyNegative</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.DutyPositive"><code class="name">var <span class="ident">DutyPositive</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.EdgesNegative"><code class="name">var <span class="ident">EdgesNegative</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.EdgesPositive"><code class="name">var <span class="ident">EdgesPositive</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.FallTime"><code class="name">var <span class="ident">FallTime</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.Frequency"><code class="name">var <span class="ident">Frequency</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.Period"><code class="name">var <span class="ident">Period</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.PhaseFall"><code class="name">var <span class="ident">PhaseFall</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.PhaseRise"><code class="name">var <span class="ident">PhaseRise</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.PulsesNegative"><code class="name">var <span class="ident">PulsesNegative</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.PulsesPositive"><code class="name">var <span class="ident">PulsesPositive</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.RiseTime"><code class="name">var <span class="ident">RiseTime</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.SlewRateNegative"><code class="name">var <span class="ident">SlewRateNegative</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.SlewRatePositive"><code class="name">var <span class="ident">SlewRatePositive</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.TVMax"><code class="name">var <span class="ident">TVMax</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.TVMin"><code class="name">var <span class="ident">TVMin</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.VRmsPeriod"><code class="name">var <span class="ident">VRmsPeriod</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.Variance"><code class="name">var <span class="ident">Variance</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.VoltageAmplitude"><code class="name">var <span class="ident">VoltageAmplitude</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.VoltageAverage"><code class="name">var <span class="ident">VoltageAverage</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.VoltageBase"><code class="name">var <span class="ident">VoltageBase</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.VoltageLower"><code class="name">var <span class="ident">VoltageLower</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.VoltageMax"><code class="name">var <span class="ident">VoltageMax</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.VoltageMid"><code class="name">var <span class="ident">VoltageMid</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.VoltageMin"><code class="name">var <span class="ident">VoltageMin</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.VoltageOvershoot"><code class="name">var <span class="ident">VoltageOvershoot</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.VoltagePeakToPeak"><code class="name">var <span class="ident">VoltagePeakToPeak</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.VoltagePreshoot"><code class="name">var <span class="ident">VoltagePreshoot</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.VoltageRMS"><code class="name">var <span class="ident">VoltageRMS</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.VoltageTop"><code class="name">var <span class="ident">VoltageTop</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.VoltageUpper"><code class="name">var <span class="ident">VoltageUpper</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.WidthNegative"><code class="name">var <span class="ident">WidthNegative</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureItem.WidthPositive"><code class="name">var <span class="ident">WidthPositive</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureStatisticMode"><code class="flex name class">
+<span>class <span class="ident">EMeasureStatisticMode</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class EMeasureStatisticMode:
+    Difference = &#34;DIFF&#34;
+    Extremum = &#34;EXTR&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.constants.EMeasureStatisticMode.Difference"><code class="name">var <span class="ident">Difference</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasureStatisticMode.Extremum"><code class="name">var <span class="ident">Extremum</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Rigol1000z.constants.EMeasurementStatisticItemType"><code class="flex name class">
+<span>class <span class="ident">EMeasurementStatisticItemType</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class EMeasurementStatisticItemType:
+    Maximum = &#34;MAX&#34;
+    Minimum = &#34;MIN&#34;
+    Current = &#34;CURR&#34;
+    Average = &#34;AVER&#34;
+    Deviation = &#34;DEV&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.constants.EMeasurementStatisticItemType.Average"><code class="name">var <span class="ident">Average</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasurementStatisticItemType.Current"><code class="name">var <span class="ident">Current</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasurementStatisticItemType.Deviation"><code class="name">var <span class="ident">Deviation</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasurementStatisticItemType.Maximum"><code class="name">var <span class="ident">Maximum</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EMeasurementStatisticItemType.Minimum"><code class="name">var <span class="ident">Minimum</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Rigol1000z.constants.ESource"><code class="flex name class">
+<span>class <span class="ident">ESource</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class ESource:
+    D0 = &#34;D0&#34;
+    D1 = &#34;D1&#34;
+    D2 = &#34;D2&#34;
+    D3 = &#34;D3&#34;
+    D4 = &#34;D4&#34;
+    D5 = &#34;D5&#34;
+    D6 = &#34;D6&#34;
+    D7 = &#34;D7&#34;
+    D8 = &#34;D8&#34;
+    D9 = &#34;D9&#34;
+    D10 = &#34;D10&#34;
+    D11 = &#34;D11&#34;
+    D12 = &#34;D12&#34;
+    D13 = &#34;D13&#34;
+    D14 = &#34;D14&#34;
+    D15 = &#34;D15&#34;
+
+    Ch1 = &#34;CHAN1&#34;
+    Ch2 = &#34;CHAN2&#34;
+    Ch3 = &#34;CHAN3&#34;
+    Ch4 = &#34;CHAN4&#34;
+
+    Math = &#34;MATH&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.constants.ESource.Ch1"><code class="name">var <span class="ident">Ch1</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.Ch2"><code class="name">var <span class="ident">Ch2</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.Ch3"><code class="name">var <span class="ident">Ch3</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.Ch4"><code class="name">var <span class="ident">Ch4</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D0"><code class="name">var <span class="ident">D0</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D1"><code class="name">var <span class="ident">D1</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D10"><code class="name">var <span class="ident">D10</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D11"><code class="name">var <span class="ident">D11</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D12"><code class="name">var <span class="ident">D12</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D13"><code class="name">var <span class="ident">D13</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D14"><code class="name">var <span class="ident">D14</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D15"><code class="name">var <span class="ident">D15</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D2"><code class="name">var <span class="ident">D2</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D3"><code class="name">var <span class="ident">D3</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D4"><code class="name">var <span class="ident">D4</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D5"><code class="name">var <span class="ident">D5</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D6"><code class="name">var <span class="ident">D6</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D7"><code class="name">var <span class="ident">D7</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D8"><code class="name">var <span class="ident">D8</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.D9"><code class="name">var <span class="ident">D9</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ESource.Math"><code class="name">var <span class="ident">Math</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Rigol1000z.constants.ETimebaseMode"><code class="flex name class">
+<span>class <span class="ident">ETimebaseMode</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class ETimebaseMode:
+    Main = &#39;main&#39;
+    XY = &#39;xy&#39;
+    Roll = &#39;roll&#39;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.constants.ETimebaseMode.Main"><code class="name">var <span class="ident">Main</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ETimebaseMode.Roll"><code class="name">var <span class="ident">Roll</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ETimebaseMode.XY"><code class="name">var <span class="ident">XY</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Rigol1000z.constants.EWaveformMode"><code class="flex name class">
+<span>class <span class="ident">EWaveformMode</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class EWaveformMode:
+    Normal = &#34;NORM&#34;
+    Max = &#34;MAX&#34;
+    Raw = &#34;RAW&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.constants.EWaveformMode.Max"><code class="name">var <span class="ident">Max</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EWaveformMode.Normal"><code class="name">var <span class="ident">Normal</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EWaveformMode.Raw"><code class="name">var <span class="ident">Raw</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Rigol1000z.constants.EWaveformReadFormat"><code class="flex name class">
+<span>class <span class="ident">EWaveformReadFormat</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class EWaveformReadFormat:
+    Word = &#34;WORD&#34;
+    Byte = &#34;BYTE&#34;
+    Ascii = &#34;ASC&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.constants.EWaveformReadFormat.Ascii"><code class="name">var <span class="ident">Ascii</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EWaveformReadFormat.Byte"><code class="name">var <span class="ident">Byte</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.EWaveformReadFormat.Word"><code class="name">var <span class="ident">Word</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="Rigol1000z.constants.ScopeModel"><code class="flex name class">
+<span>class <span class="ident">ScopeModel</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class ScopeModel:
+    DS1104Z_S_Plus = &#34;DS1104Z-S Plus&#34;
+    DS1074Z_S_Plus = &#34;DS1074Z-S Plus&#34;
+    DS1104Z_Plus = &#34;DS1104Z Plus&#34;
+    DS1104Z = &#34;DS1104Z&#34;  # Hacked model
+    DS1074Z_Plus = &#34;DS1074Z Plus&#34;
+    DS1054Z = &#34;DS1054Z&#34;</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="Rigol1000z.constants.ScopeModel.DS1054Z"><code class="name">var <span class="ident">DS1054Z</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ScopeModel.DS1074Z_Plus"><code class="name">var <span class="ident">DS1074Z_Plus</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ScopeModel.DS1074Z_S_Plus"><code class="name">var <span class="ident">DS1074Z_S_Plus</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ScopeModel.DS1104Z"><code class="name">var <span class="ident">DS1104Z</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ScopeModel.DS1104Z_Plus"><code class="name">var <span class="ident">DS1104Z_Plus</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="Rigol1000z.constants.ScopeModel.DS1104Z_S_Plus"><code class="name">var <span class="ident">DS1104Z_S_Plus</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="Rigol1000z" href="index.html">Rigol1000z</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="Rigol1000z.constants.EAcquireMode" href="#Rigol1000z.constants.EAcquireMode">EAcquireMode</a></code></h4>
+<ul class="">
+<li><code><a title="Rigol1000z.constants.EAcquireMode.Averages" href="#Rigol1000z.constants.EAcquireMode.Averages">Averages</a></code></li>
+<li><code><a title="Rigol1000z.constants.EAcquireMode.HighResolution" href="#Rigol1000z.constants.EAcquireMode.HighResolution">HighResolution</a></code></li>
+<li><code><a title="Rigol1000z.constants.EAcquireMode.Normal" href="#Rigol1000z.constants.EAcquireMode.Normal">Normal</a></code></li>
+<li><code><a title="Rigol1000z.constants.EAcquireMode.Peak" href="#Rigol1000z.constants.EAcquireMode.Peak">Peak</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Rigol1000z.constants.EDisplayGrid" href="#Rigol1000z.constants.EDisplayGrid">EDisplayGrid</a></code></h4>
+<ul class="">
+<li><code><a title="Rigol1000z.constants.EDisplayGrid.Full" href="#Rigol1000z.constants.EDisplayGrid.Full">Full</a></code></li>
+<li><code><a title="Rigol1000z.constants.EDisplayGrid.Half" href="#Rigol1000z.constants.EDisplayGrid.Half">Half</a></code></li>
+<li><code><a title="Rigol1000z.constants.EDisplayGrid.NoGrid" href="#Rigol1000z.constants.EDisplayGrid.NoGrid">NoGrid</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Rigol1000z.constants.EDisplayMode" href="#Rigol1000z.constants.EDisplayMode">EDisplayMode</a></code></h4>
+<ul class="">
+<li><code><a title="Rigol1000z.constants.EDisplayMode.Dots" href="#Rigol1000z.constants.EDisplayMode.Dots">Dots</a></code></li>
+<li><code><a title="Rigol1000z.constants.EDisplayMode.Vectors" href="#Rigol1000z.constants.EDisplayMode.Vectors">Vectors</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Rigol1000z.constants.EEventtableColumn" href="#Rigol1000z.constants.EEventtableColumn">EEventtableColumn</a></code></h4>
+<ul class="">
+<li><code><a title="Rigol1000z.constants.EEventtableColumn.Data" href="#Rigol1000z.constants.EEventtableColumn.Data">Data</a></code></li>
+<li><code><a title="Rigol1000z.constants.EEventtableColumn.MISO" href="#Rigol1000z.constants.EEventtableColumn.MISO">MISO</a></code></li>
+<li><code><a title="Rigol1000z.constants.EEventtableColumn.MOSI" href="#Rigol1000z.constants.EEventtableColumn.MOSI">MOSI</a></code></li>
+<li><code><a title="Rigol1000z.constants.EEventtableColumn.Rx" href="#Rigol1000z.constants.EEventtableColumn.Rx">Rx</a></code></li>
+<li><code><a title="Rigol1000z.constants.EEventtableColumn.Tx" href="#Rigol1000z.constants.EEventtableColumn.Tx">Tx</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Rigol1000z.constants.EEventtableFormat" href="#Rigol1000z.constants.EEventtableFormat">EEventtableFormat</a></code></h4>
+<ul class="">
+<li><code><a title="Rigol1000z.constants.EEventtableFormat.Ascii" href="#Rigol1000z.constants.EEventtableFormat.Ascii">Ascii</a></code></li>
+<li><code><a title="Rigol1000z.constants.EEventtableFormat.Decimal" href="#Rigol1000z.constants.EEventtableFormat.Decimal">Decimal</a></code></li>
+<li><code><a title="Rigol1000z.constants.EEventtableFormat.Hex" href="#Rigol1000z.constants.EEventtableFormat.Hex">Hex</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Rigol1000z.constants.EEventtableViewFormat" href="#Rigol1000z.constants.EEventtableViewFormat">EEventtableViewFormat</a></code></h4>
+<ul class="">
+<li><code><a title="Rigol1000z.constants.EEventtableViewFormat.Detail" href="#Rigol1000z.constants.EEventtableViewFormat.Detail">Detail</a></code></li>
+<li><code><a title="Rigol1000z.constants.EEventtableViewFormat.Package" href="#Rigol1000z.constants.EEventtableViewFormat.Package">Package</a></code></li>
+<li><code><a title="Rigol1000z.constants.EEventtableViewFormat.Payload" href="#Rigol1000z.constants.EEventtableViewFormat.Payload">Payload</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Rigol1000z.constants.EMeasureItem" href="#Rigol1000z.constants.EMeasureItem">EMeasureItem</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Rigol1000z.constants.EMeasureItem.Area" href="#Rigol1000z.constants.EMeasureItem.Area">Area</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.AreaPeriod" href="#Rigol1000z.constants.EMeasureItem.AreaPeriod">AreaPeriod</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.DelayFall" href="#Rigol1000z.constants.EMeasureItem.DelayFall">DelayFall</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.DelayRise" href="#Rigol1000z.constants.EMeasureItem.DelayRise">DelayRise</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.DutyNegative" href="#Rigol1000z.constants.EMeasureItem.DutyNegative">DutyNegative</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.DutyPositive" href="#Rigol1000z.constants.EMeasureItem.DutyPositive">DutyPositive</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.EdgesNegative" href="#Rigol1000z.constants.EMeasureItem.EdgesNegative">EdgesNegative</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.EdgesPositive" href="#Rigol1000z.constants.EMeasureItem.EdgesPositive">EdgesPositive</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.FallTime" href="#Rigol1000z.constants.EMeasureItem.FallTime">FallTime</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.Frequency" href="#Rigol1000z.constants.EMeasureItem.Frequency">Frequency</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.Period" href="#Rigol1000z.constants.EMeasureItem.Period">Period</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.PhaseFall" href="#Rigol1000z.constants.EMeasureItem.PhaseFall">PhaseFall</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.PhaseRise" href="#Rigol1000z.constants.EMeasureItem.PhaseRise">PhaseRise</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.PulsesNegative" href="#Rigol1000z.constants.EMeasureItem.PulsesNegative">PulsesNegative</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.PulsesPositive" href="#Rigol1000z.constants.EMeasureItem.PulsesPositive">PulsesPositive</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.RiseTime" href="#Rigol1000z.constants.EMeasureItem.RiseTime">RiseTime</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.SlewRateNegative" href="#Rigol1000z.constants.EMeasureItem.SlewRateNegative">SlewRateNegative</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.SlewRatePositive" href="#Rigol1000z.constants.EMeasureItem.SlewRatePositive">SlewRatePositive</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.TVMax" href="#Rigol1000z.constants.EMeasureItem.TVMax">TVMax</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.TVMin" href="#Rigol1000z.constants.EMeasureItem.TVMin">TVMin</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.VRmsPeriod" href="#Rigol1000z.constants.EMeasureItem.VRmsPeriod">VRmsPeriod</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.Variance" href="#Rigol1000z.constants.EMeasureItem.Variance">Variance</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.VoltageAmplitude" href="#Rigol1000z.constants.EMeasureItem.VoltageAmplitude">VoltageAmplitude</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.VoltageAverage" href="#Rigol1000z.constants.EMeasureItem.VoltageAverage">VoltageAverage</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.VoltageBase" href="#Rigol1000z.constants.EMeasureItem.VoltageBase">VoltageBase</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.VoltageLower" href="#Rigol1000z.constants.EMeasureItem.VoltageLower">VoltageLower</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.VoltageMax" href="#Rigol1000z.constants.EMeasureItem.VoltageMax">VoltageMax</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.VoltageMid" href="#Rigol1000z.constants.EMeasureItem.VoltageMid">VoltageMid</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.VoltageMin" href="#Rigol1000z.constants.EMeasureItem.VoltageMin">VoltageMin</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.VoltageOvershoot" href="#Rigol1000z.constants.EMeasureItem.VoltageOvershoot">VoltageOvershoot</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.VoltagePeakToPeak" href="#Rigol1000z.constants.EMeasureItem.VoltagePeakToPeak">VoltagePeakToPeak</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.VoltagePreshoot" href="#Rigol1000z.constants.EMeasureItem.VoltagePreshoot">VoltagePreshoot</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.VoltageRMS" href="#Rigol1000z.constants.EMeasureItem.VoltageRMS">VoltageRMS</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.VoltageTop" href="#Rigol1000z.constants.EMeasureItem.VoltageTop">VoltageTop</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.VoltageUpper" href="#Rigol1000z.constants.EMeasureItem.VoltageUpper">VoltageUpper</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.WidthNegative" href="#Rigol1000z.constants.EMeasureItem.WidthNegative">WidthNegative</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureItem.WidthPositive" href="#Rigol1000z.constants.EMeasureItem.WidthPositive">WidthPositive</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Rigol1000z.constants.EMeasureStatisticMode" href="#Rigol1000z.constants.EMeasureStatisticMode">EMeasureStatisticMode</a></code></h4>
+<ul class="">
+<li><code><a title="Rigol1000z.constants.EMeasureStatisticMode.Difference" href="#Rigol1000z.constants.EMeasureStatisticMode.Difference">Difference</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasureStatisticMode.Extremum" href="#Rigol1000z.constants.EMeasureStatisticMode.Extremum">Extremum</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Rigol1000z.constants.EMeasurementStatisticItemType" href="#Rigol1000z.constants.EMeasurementStatisticItemType">EMeasurementStatisticItemType</a></code></h4>
+<ul class="">
+<li><code><a title="Rigol1000z.constants.EMeasurementStatisticItemType.Average" href="#Rigol1000z.constants.EMeasurementStatisticItemType.Average">Average</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasurementStatisticItemType.Current" href="#Rigol1000z.constants.EMeasurementStatisticItemType.Current">Current</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasurementStatisticItemType.Deviation" href="#Rigol1000z.constants.EMeasurementStatisticItemType.Deviation">Deviation</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasurementStatisticItemType.Maximum" href="#Rigol1000z.constants.EMeasurementStatisticItemType.Maximum">Maximum</a></code></li>
+<li><code><a title="Rigol1000z.constants.EMeasurementStatisticItemType.Minimum" href="#Rigol1000z.constants.EMeasurementStatisticItemType.Minimum">Minimum</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Rigol1000z.constants.ESource" href="#Rigol1000z.constants.ESource">ESource</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Rigol1000z.constants.ESource.Ch1" href="#Rigol1000z.constants.ESource.Ch1">Ch1</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.Ch2" href="#Rigol1000z.constants.ESource.Ch2">Ch2</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.Ch3" href="#Rigol1000z.constants.ESource.Ch3">Ch3</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.Ch4" href="#Rigol1000z.constants.ESource.Ch4">Ch4</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D0" href="#Rigol1000z.constants.ESource.D0">D0</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D1" href="#Rigol1000z.constants.ESource.D1">D1</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D10" href="#Rigol1000z.constants.ESource.D10">D10</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D11" href="#Rigol1000z.constants.ESource.D11">D11</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D12" href="#Rigol1000z.constants.ESource.D12">D12</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D13" href="#Rigol1000z.constants.ESource.D13">D13</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D14" href="#Rigol1000z.constants.ESource.D14">D14</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D15" href="#Rigol1000z.constants.ESource.D15">D15</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D2" href="#Rigol1000z.constants.ESource.D2">D2</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D3" href="#Rigol1000z.constants.ESource.D3">D3</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D4" href="#Rigol1000z.constants.ESource.D4">D4</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D5" href="#Rigol1000z.constants.ESource.D5">D5</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D6" href="#Rigol1000z.constants.ESource.D6">D6</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D7" href="#Rigol1000z.constants.ESource.D7">D7</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D8" href="#Rigol1000z.constants.ESource.D8">D8</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.D9" href="#Rigol1000z.constants.ESource.D9">D9</a></code></li>
+<li><code><a title="Rigol1000z.constants.ESource.Math" href="#Rigol1000z.constants.ESource.Math">Math</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Rigol1000z.constants.ETimebaseMode" href="#Rigol1000z.constants.ETimebaseMode">ETimebaseMode</a></code></h4>
+<ul class="">
+<li><code><a title="Rigol1000z.constants.ETimebaseMode.Main" href="#Rigol1000z.constants.ETimebaseMode.Main">Main</a></code></li>
+<li><code><a title="Rigol1000z.constants.ETimebaseMode.Roll" href="#Rigol1000z.constants.ETimebaseMode.Roll">Roll</a></code></li>
+<li><code><a title="Rigol1000z.constants.ETimebaseMode.XY" href="#Rigol1000z.constants.ETimebaseMode.XY">XY</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Rigol1000z.constants.EWaveformMode" href="#Rigol1000z.constants.EWaveformMode">EWaveformMode</a></code></h4>
+<ul class="">
+<li><code><a title="Rigol1000z.constants.EWaveformMode.Max" href="#Rigol1000z.constants.EWaveformMode.Max">Max</a></code></li>
+<li><code><a title="Rigol1000z.constants.EWaveformMode.Normal" href="#Rigol1000z.constants.EWaveformMode.Normal">Normal</a></code></li>
+<li><code><a title="Rigol1000z.constants.EWaveformMode.Raw" href="#Rigol1000z.constants.EWaveformMode.Raw">Raw</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Rigol1000z.constants.EWaveformReadFormat" href="#Rigol1000z.constants.EWaveformReadFormat">EWaveformReadFormat</a></code></h4>
+<ul class="">
+<li><code><a title="Rigol1000z.constants.EWaveformReadFormat.Ascii" href="#Rigol1000z.constants.EWaveformReadFormat.Ascii">Ascii</a></code></li>
+<li><code><a title="Rigol1000z.constants.EWaveformReadFormat.Byte" href="#Rigol1000z.constants.EWaveformReadFormat.Byte">Byte</a></code></li>
+<li><code><a title="Rigol1000z.constants.EWaveformReadFormat.Word" href="#Rigol1000z.constants.EWaveformReadFormat.Word">Word</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Rigol1000z.constants.ScopeModel" href="#Rigol1000z.constants.ScopeModel">ScopeModel</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Rigol1000z.constants.ScopeModel.DS1054Z" href="#Rigol1000z.constants.ScopeModel.DS1054Z">DS1054Z</a></code></li>
+<li><code><a title="Rigol1000z.constants.ScopeModel.DS1074Z_Plus" href="#Rigol1000z.constants.ScopeModel.DS1074Z_Plus">DS1074Z_Plus</a></code></li>
+<li><code><a title="Rigol1000z.constants.ScopeModel.DS1074Z_S_Plus" href="#Rigol1000z.constants.ScopeModel.DS1074Z_S_Plus">DS1074Z_S_Plus</a></code></li>
+<li><code><a title="Rigol1000z.constants.ScopeModel.DS1104Z" href="#Rigol1000z.constants.ScopeModel.DS1104Z">DS1104Z</a></code></li>
+<li><code><a title="Rigol1000z.constants.ScopeModel.DS1104Z_Plus" href="#Rigol1000z.constants.ScopeModel.DS1104Z_Plus">DS1104Z_Plus</a></code></li>
+<li><code><a title="Rigol1000z.constants.ScopeModel.DS1104Z_S_Plus" href="#Rigol1000z.constants.ScopeModel.DS1104Z_S_Plus">DS1104Z_S_Plus</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.4</a>.</p>
+</footer>
+</body>
+</html>
