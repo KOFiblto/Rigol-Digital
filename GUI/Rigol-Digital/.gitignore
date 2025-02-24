@@ -47,6 +47,13 @@ CMakeLists.txt.user*
 # Vim temporary files
 .*.swp
 
+# Qt Creator-specific files
+*.pro.user
+*.pro.user.*
+.qmake.stash
+
+.qtcreator/
+
 # Visual Studio generated files
 *.ib_pdb_index
 *.idb
