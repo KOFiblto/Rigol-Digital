@@ -1,27 +1,35 @@
-This is a free Custom version of AlexZettlers Rigol1000z Repository (https://github.com/AlexZettler/Rigol1000z)
-It features a Install.bat, that install all dependencies and a Run.bat, that runs the programm. 
+# Free Custom Version of AlexZettler's Rigol1000z Repository
 
-Install Guide:
-  1) Install Git (If u already have, skip to 2)
-    a) Download from here https://git-scm.com/downloads/win
-    b) Run the downloaded .exe File
-  2) Install Python 3.13 (Microsoft Store or https://www.python.org/downloads/)
-  3) Go into a location of your choice, for example: "C:\tools"
-  4) Open a Console there (Right-click and select "Open in Terminal")
-  5) In the Console put this command
-      a) "git clone https://github.com/KOFiblto/Rigol-Digital"
-  8) In the Folder, start the Install.bat, and wait for it to say that it is finished
-  9) Start Run.bat, to start the programm.
-  10) Input the IP into the code that is displayed, in Row 14
-  11) On the top click Run -> Run Method
+This is a free custom version of the Rigol1000z repository: [Rigol1000z](https://github.com/jeanyvesb9/Rigol1000z). It features an `Install.bat` that installs all dependencies and a `Run.bat` that runs the program.
+
+## Install Guide:
+
+### 1) Install Git (Skip if already installed)
+   a) Download Git from here: [https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)  
+   b) Run the downloaded `.exe` file.
+
+### 2) Install Python 3.13
+   You can install Python from the Microsoft Store or download it directly from [Python.org](https://www.python.org/downloads/).
+
+### 3) Choose a directory for the project
+   Select a location where you want to store the project files (e.g., `C:\tools`).
+
+### 4) Open a Console in the directory:
+   - Right-click inside the folder and select **"Open in Terminal"**.
+
+### 5) In the Console, run the following command to clone the repository:
+   ```bash
+   git clone https://github.com/KOFiblto/Rigol-Digital
+```
+### 8) Finish Install
+1) In the Folder, start the Install.bat, and wait for it to say that it is finished
+2) Start Run.bat, to start the programm.
+3) Input the IP into the code that is displayed, in Row 14
+4) On the top click Run -> Run Method
 
 
-.
-.
-.
-Lizense of AlexZettler:
-""
 
+## Lizense of jeanyvesb9:
 MIT License
 
 Copyright (c) for portions of the project are held by jtambasco, 2017 (original project creator). All other copyright (c) for the project are held by Jean Yves Beaucamp, 2019.
@@ -43,5 +51,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-""
