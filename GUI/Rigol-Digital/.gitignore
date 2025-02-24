@@ -54,6 +54,20 @@ CMakeLists.txt.user*
 
 .qtcreator/
 
+# Qt Designer
+*.ui
+
+# Benutzerspezifische Dateien
+*.pyproject.user
+
+# Python Bytecode
+*.pyc
+*.pyo
+
+# Editor-spezifische temporäre Dateien
+*.swp
+
+
 # Visual Studio generated files
 *.ib_pdb_index
 *.idb
