@@ -9,7 +9,7 @@ Install Guide:
   3) Go into a location of your choice, for example: "C:\tools"
   4) Open a Console there (Right-click and select "Open in Terminal")
   5) In the Console put this command
-       >> git clone https://github.com/KOFiblto/Rigol-Digital <<
+       " git clone https://github.com/KOFiblto/Rigol-Digital "
   6) In the Folder, start the Install.bat, and wait for it to say that it is finished
   7) Start Run.bat, to start the programm.
   8) Input the IP into the code that is displayed, in Row 14
