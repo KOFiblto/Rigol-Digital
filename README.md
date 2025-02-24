@@ -1,10 +1,25 @@
-This is a private, free Custom version of AlexZettlers Rigol1000z Repository (https://github.com/AlexZettler/Rigol1000z)
+This is a free Custom version of AlexZettlers Rigol1000z Repository (https://github.com/AlexZettler/Rigol1000z)
 It features a Install.bat, that install all dependencies and a Run.bat, that runs the programm. 
 
+Install Guide:
+  1) Install Git (If u already have, skip to 2)
+    a) Download from here https://git-scm.com/downloads/win
+    b) Run the downloaded .exe File
+  2) Install Python 3.13 (Microsoft Store or https://www.python.org/downloads/)
+  3) Go into a location of your choice, for example: "C:\tools"
+  4) Open a Console there (Right-click and select "Open in Terminal")
+  5) In the Console put this command
+       >> git clone https://github.com/KOFiblto/Rigol-Digital <<
+  6) In the Folder, start the Install.bat, and wait for it to say that it is finished
+  7) Start Run.bat, to start the programm.
+  8) Input the IP into the code that is displayed, in Row 14
+  9) On the top click Run -> Run Method
 
 
+.
+.
+.
 Lizense of AlexZettler:
-
 ""
 
 MIT License
