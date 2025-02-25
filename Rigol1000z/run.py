@@ -12,7 +12,7 @@ rm = visa.ResourceManager()
 # Hier ist die IP des Oszilloskops einzugeben
 # dazu: Utility -> EA Einstellungen -> LAN Einstellung -> Config -> DHCP aktivieren
 # dann: "IP Address" abschreiben bzw. den String unter "VISA Address" in der nächsten Zeile einsetzen
-instrument = rm.open_resource("TCPIP0::172.16.58.70::INSTR")
+instrument = rm.open_resource("TCPIP0::192.3.3.3::INSTR")
 print(f"Using " + instrument.query("*IDN?"))
 
 def get_next_filename(folder: str, prefix: str, extension: str) -> str:
