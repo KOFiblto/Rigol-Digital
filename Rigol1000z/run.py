@@ -45,9 +45,9 @@ with Rigol1000z(instrument) as oszi:
     oszi.stop()
     
     #Screenshot 
-    screenshot_filename = get_next_filename("screenshots", "screenshot", "png")
+    screenshot_filename = get_next_filename(os.path.join(os.getcwd(), '..', 'screenshots'), "screenshot", "png")
     oszi.get_screenshot(screenshot_filename)  # Save the screenshot with the generated filename 
     
     #Channels
-    channel_filename = get_next_filename("channels", "channels", "csv")
+    channel_filename = get_next_filename(os.path.join(os.getcwd(), '..', 'channels'), "channels", "csv")
     oszi.get_data(EWaveformMode.Raw, channel_filename)  # Collect and save waveform data from all enabled channels
