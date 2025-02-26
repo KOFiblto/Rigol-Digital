@@ -53,6 +53,10 @@ It features:
 
 </details> 
 
+---
+
+## Usage Guide
+
 <details> 
   <summary><b>Start Program</b></summary>
 
