@@ -12,33 +12,44 @@ It features:
 ## Install Guide
 
 <details>
-  <summary><b>Install Git</b> (Skip if already installed)</summary>
-
-  1. Download Git from here: [https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)  
-  2. Run the downloaded `.exe` file.  
-
-</details>
-
-<details>
   <summary><b>Install Python 3.13</b>(Skip if already installed)</summary>
 
-  - Install Python Version 3.13 from the [Microsoft Store](https://apps.microsoft.com/detail/9PNRBTZXMB4Z?hl=en-us&gl=AT&ocid=pdpshare) or download it from [Python.org](https://www.python.org/downloads/) or directly from [here](https://www.python.org/ftp/python/3.13.0/python-3.13.0.exe) 
+  1. Install Python Version 3.13 from the [Microsoft Store](https://apps.microsoft.com/detail/9PNRBTZXMB4Z?hl=en-us&gl=AT&ocid=pdpshare) or download it from [Python.org](https://www.python.org/downloads/) or directly from [here](https://www.python.org/ftp/python/3.13.0/python-3.13.0.exe)
+  2. Run the downloaded `.exe` file. 
 
 </details>
 
 <details>
-  <summary><b>Install Rigol-Digital</b></summary>
+  <summary><b>Install Rigol-Digital with Git</b></summary>
+  
 
-  1. Choose a directory for the project (e.g., `C:\tools`).  
-  2. Open a terminal in that directory:  
-     - Right-click inside the folder -> **"More Options"** -> **"Open GIT Bash here"**.  
-  3. Run the following command:  
+  1. Install Git (Skip if already installed)
+
+  - Download Git from here: [https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)  
+  - Run the downloaded `.exe` file.  
+
+  3. Choose a directory for the project (e.g., `C:\tools`).  
+  4. Open a terminal in that directory:  
+     - Right-click inside the folder -> **"Show more Options"** -> **"Open GIT Bash here"**.  
+  5. Run the following command:  
 
      ```bash
      git clone https://github.com/KOFiblto/Rigol-Digital
      ```
 
-  4. Run `Install.bat` and wait for the installation to complete.  
+  6. Run `Install.bat` and wait for the installation to complete.  
+
+</details> 
+
+<details>
+  <summary><b>Install Rigol-Digital without Git</b></summary>
+
+  1. Go to the Release Tab of this Github and search for the latest working release ([here](https://github.com/KOFiblto/Rigol-Digital/releases/tag/WORKING))
+  2. Download the zip File
+  3. Go into your Downloads, right-click the zip and click **"Extract All..."** and then **"Extract"**
+  4. Choose a directory (Folder) for the project (e.g., `C:\tools`).  
+  5. Go back to your Downloads folder, and copy the extracted Folder to the new Location 
+  9. Run `Install.bat` and wait for the installation to complete.  
 
 </details> 
 
