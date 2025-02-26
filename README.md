@@ -20,7 +20,7 @@ It features:
 </details>
 
 <details>
-  <summary><b>Install Python 3.13 (Skip if already installed)</b></summary>
+  <summary><b>Install Python 3.13</b>(Skip if already installed)</summary>
 
   - Install Python Version 3.13 from the [Microsoft Store](https://apps.microsoft.com/detail/9PNRBTZXMB4Z?hl=en-us&gl=AT&ocid=pdpshare) or download it from [Python.org](https://www.python.org/downloads/) or directly from [here](https://www.python.org/ftp/python/3.13.0/python-3.13.0.exe) 
 
@@ -31,7 +31,7 @@ It features:
 
   1. Choose a directory for the project (e.g., `C:\tools`).  
   2. Open a terminal in that directory:  
-     - Right-click inside the folder and select **"Open in Terminal"**.  
+     - Right-click inside the folder -> **"More Options"** -> **"Open GIT Bash here"**.  
   3. Run the following command:  
 
      ```bash
