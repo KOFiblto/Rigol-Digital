@@ -77,6 +77,14 @@ It features:
 
 </details>
 
+<details> 
+  <summary><b>Plot all csv Files</b></summary>
+
+  1. Open the project folder.  
+  2. Run `Plot.bat`.  
+  3. Go into the "plots" folder.  
+
+</details> 
 
 ---
 
