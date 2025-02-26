@@ -34,11 +34,9 @@ It features:
   2. Open a terminal in that directory:  
      - Right-click inside the folder and select **"Open in Terminal"**.  
   3. Run the following command:  
-
      ```bash
      git clone https://github.com/KOFiblto/Rigol-Digital
      ```
-
   4. Run `Install.bat` and wait for the installation to complete.  
 
 </details> 
