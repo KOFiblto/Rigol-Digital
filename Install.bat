@@ -32,10 +32,6 @@ py -m pip install PySide6
 :: Optional: Alle Pakete im aktuellen virtuellen Umfeld auflisten
 py -m pip freeze
 
-:: Navigiere zum Qt-Projekt-Ordner und installiere alle Abhängigkeiten
-cd /d "%CUR_DIR%\GUI\Rigol-Digital"
-py -m pip install -r requirements.txt
-
 :: Zurück zum ursprünglichen Verzeichnis
 cd /d "%CUR_DIR%"
 
