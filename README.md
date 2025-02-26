@@ -1,62 +1,92 @@
 # Free Custom Version of AlexZettler's Rigol1000z Repository
 
-This is a free custom version, for the private use, of the AlexZettlers repositor,[Rigol1000z](https://github.com/AlexZettler/Rigol1000z), which is a fork of jeanyvesb9s repository [Rigol1000z](https://github.com/jeanyvesb9/Rigol1000z), which is a fork of the original from jtambasco [RigolOscilloscope](https://github.com/jtambasco/RigolOscilloscope). It features an `Install.bat` that installs all dependencies and a `Run.bat` that runs the program.
+This is my custom version, for private use, of AlexZettler's repository, [Rigol1000z](https://github.com/AlexZettler/Rigol1000z), which is a fork of jeanyvesb9's repository [Rigol1000z](https://github.com/jeanyvesb9/Rigol1000z), which is a fork of the original from jtambasco [RigolOscilloscope](https://github.com/jtambasco/RigolOscilloscope).  
 
-## Install Guide:
-
-### 1) Install Git (Skip if already installed)
-   a) Download Git from here: [https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)  
-   b) Run the downloaded `.exe` file.
-
-### 2) Install Python 3.13
-   You can install Python from the Microsoft Store or download it directly from [Python.org](https://www.python.org/downloads/).
-
-### 3) Choose a directory for the project
-   Select a location where you want to store the project files (e.g., `C:\tools`).
-
-### 4) Open a Console in the directory:
-   - Right-click inside the folder and select **"Open in Terminal"**.
-
-### 5) In the Console, run the following command to clone the repository:
-   ```bash
-   git clone https://github.com/KOFiblto/Rigol-Digital
-```
-### 8) Finish Install
-1) In the Folder, start the Install.bat, and wait for it to say that it is finished
-2) Go to 9)
-4) Start Run.bat, to start the programm.
-5) On the top click Run -> Run Method
-
-### 9) Input IP of Oscilloscope
-
-#### Read IP from Oscilloscope:
-1. Connect Oscilloscope to the Network via a LAN Cable.
-2. Connect your PC/Laptop to the same Network
-3. On your Ocilloscope go to   Utility -> EA Settings -> LAN Settings -> Config -> Enable DHCP
-
-#### Set IP in Program:
-1. Start `Change_IP.bat` and input the IP
+It features:  
+- `Install.bat` to install all dependencies  
+- `Change_IP.bat` to change the IP  
+- `Run.bat` to start the program
+- `Plot.bat` that plots all csv Files
+---
 
 
-## Lizense of jeanyvesb9:
-MIT License
+## Install Guide
 
-Copyright (c) for portions of the project are held by jtambasco, 2017 (original project creator). All other copyright (c) for the project are held by Jean Yves Beaucamp, 2019.
+<details>
+  <summary><b>Install Git</b> (Skip if already installed)</summary>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+  1. Download Git from here: [https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)  
+  2. Run the downloaded `.exe` file.  
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+</details>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+<details>
+  <summary><b>Install Python 3.13 (Skip if already installed)</b></summary>
+
+  - Install Python Version 3.13 from the [Microsoft Store](https://apps.microsoft.com/detail/9PNRBTZXMB4Z?hl=en-us&gl=AT&ocid=pdpshare) or download it from [Python.org](https://www.python.org/downloads/) or directly from [here](https://www.python.org/ftp/python/3.13.0/python-3.13.0.exe) 
+
+</details>
+
+<details>
+  <summary><b>Install Rigol-Digital</b></summary>
+
+  1. Choose a directory for the project (e.g., `C:\tools`).  
+  2. Open a terminal in that directory:  
+     - Right-click inside the folder and select **"Open in Terminal"**.  
+  3. Run the following command:  
+
+     ```bash
+     git clone https://github.com/KOFiblto/Rigol-Digital
+     ```
+
+  4. Run `Install.bat` and wait for the installation to complete.  
+
+</details> 
+
+<details> 
+  <summary><b>Start Program</b></summary>
+
+  1. Open the project folder.  
+  2. Run `Run.bat`.  
+  3. In the program, go to **Run → Run Module**.  
+
+</details> 
+
+<details> 
+  <summary><b>Change IP</b></summary>
+
+  1. Connect the oscilloscope to the network via a LAN cable.  
+  2. Ensure your PC/Laptop is on the same network.  
+  3. On the Oscilloscope, go to **Utility → EA Settings → LAN Settings → Config → Enable DHCP**.  
+  4. Start `Change_IP.bat` and enter the oscilloscope's IP.  
+
+</details>
+
+---
+
+## License
+
+<details> 
+  <summary><b>MIT License (jeanyvesb9)</b></summary>
+
+  Copyright (c) for portions of the project are held by jtambasco, 2017 (original project creator).  
+  All other copyrights (c) for the project are held by Jean Yves Beaucamp, 2019.  
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy  
+  of this software and associated documentation files (the "Software"), to deal  
+  in the Software without restriction, including without limitation the rights  
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+  copies of the Software, and to permit persons to whom the Software is  
+  furnished to do so, subject to the following conditions:  
+
+  The above copyright notice and this permission notice shall be included in all  
+  copies or substantial portions of the Software.  
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,  
+  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR  
+  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE  
+  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,  
+  TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE  
+  USE OR OTHER DEALINGS IN THE SOFTWARE.  
+
+</details>
