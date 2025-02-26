@@ -1,6 +1,6 @@
 # Free Custom Version of AlexZettler's Rigol1000z Repository
 
-This is a free custom version, for the private use, of the AlexZettlers repositor,[Rigol1000z](https://github.com/AlexZettler/Rigol1000z), which is a fork of jeanyvesb9s repository [Rigol1000z](https://github.com/jeanyvesb9/Rigol1000z), which is a fork of the original from jtambasco [RigolOscilloscope](https://github.com/jtambasco/RigolOscilloscope). It features an `Install.bat` that installs all dependencies and a `Run.bat` that runs the program.
+This is a free custom version, for the private use, of the AlexZettlers repositor,[Rigol1000z](https://github.com/AlexZettler/Rigol1000z), which is a fork of jeanyvesb9s repository [Rigol1000z](https://github.com/jeanyvesb9/Rigol1000z), which is a fork of the original from jtambasco [RigolOscilloscope](https://github.com/jtambasco/RigolOscilloscope). It features an `Install.bat` that installs all dependencies, a `Change_IP` that changes the IP and a `Run.bat` that runs the program.
 
 ## Install Guide:
 
@@ -23,23 +23,19 @@ This is a free custom version, for the private use, of the AlexZettlers reposito
 ```
 ### 8) Finish Install
 1) In the Folder, start the Install.bat, and wait for it to say that it is finished
-2) Start Run.bat, to start the programm.
-3) Input the IP into the code that is displayed, in Row 14
-4) On the top click Run -> Run Method
+2) Go to 9)
+4) Start Run.bat, to start the programm.
+5) On the top click Run -> Run Method
 
 ### 9) Input IP of Oscilloscope
 
 #### Read IP from Oscilloscope:
-1. Utility -> EA Settings -> LAN Settings -> Config -> Enable DHCP
+1. Connect Oscilloscope to the Network via a LAN Cable.
+2. Connect your PC/Laptop to the same Network
+3. On your Ocilloscope go to   Utility -> EA Settings -> LAN Settings -> Config -> Enable DHCP
 
 #### Set IP in Program:
-1. Start `Run.bat`
-2. Go to line 14 and enter IP in that line:
-   ```python
-   instrument = rm.open_resource("TCPIP0::172.16.62.104::INSTR")
-                                                \___________/
-                                                Input IP here
-
+1. Start `Change_IP.bat` and input the IP
 
 
 ## Lizense of jeanyvesb9:
