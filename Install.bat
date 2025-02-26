@@ -21,7 +21,9 @@ call "%CUR_DIR%\pyLab\Scripts\activate.bat"
 :: Installiere benötigte Python-Pakete (verwende den Python-Interpreter aus der virtuellen Umgebung)
 python -m pip install --upgrade pip
 python -m pip install wheel matplotlib tqdm pyvisa pyvisa-py
-python -m pip install pandas
+
+cd /d "%CUR_DIR%\Rigol1000z"
+python -m pip install pandas matplotlib
 
 :: Navigiere in den Rigol1000z-Ordner und installiere das Paket
 cd /d "%CUR_DIR%\Rigol1000z"
