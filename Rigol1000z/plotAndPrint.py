@@ -20,6 +20,11 @@ def get_next_filename(folder: str, prefix: str, extension: str, timestamp: str) 
 channels_folder = os.path.join(os.getcwd(), '..', 'channels')
 output_folder = os.path.join(os.getcwd(), '..', 'plots')
 
+# Check if channels folder exists
+if not os.path.exists(channels_folder):
+    print(f"Channels folder not found: Rigol-Digital/channels. Please either manually create it or get csv files by running the program")
+    exit()
+
 for filename in os.listdir(channels_folder):
     if filename.endswith('.csv'):  # Check if it's a CSV file
         file_path = os.path.join(channels_folder, filename)
@@ -33,7 +38,6 @@ for filename in os.listdir(channels_folder):
         
         df = pd.read_csv(file_path, header=None, delimiter=',')
 
-        
         if df.shape[1] < 2:
             print(f"Skipping {filename}: Not enough columns (found {df.shape[1]}).")
             continue
