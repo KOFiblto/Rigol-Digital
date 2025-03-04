@@ -39,4 +39,4 @@ python -m pip freeze
 cd /d "%CUR_DIR%"
 
 echo Setup abgeschlossen!
-pause
+exit /b
