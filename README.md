@@ -129,3 +129,11 @@ It features:
   USE OR OTHER DEALINGS IN THE SOFTWARE.  
 
 </details>
+
+<details> 
+  <summary><b>App Icon</b></summary>
+
+  App Icon Designed by @maanicons:
+  https://www.freepik.com/icon/oscilloscope_15189929  
+
+</details>
