@@ -22,7 +22,7 @@ It features:
 </details>
 
 <details>
-  <summary><b>Install Rigol-Digital with Git</b></summary>
+  <summary><b>Install Rigol-Digital automatically (Git)</b></summary>
   
 
   1. Install Git (Skip if already installed)
@@ -30,21 +30,36 @@ It features:
   - Download Git from here: [https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)  
   - Run the downloaded `.exe` file.  
 
-  3. Choose a directory for the project (e.g., `C:\tools`).  
-  4. Open a terminal in that directory:  
+  2. Download the Latest Install-Rigol.bat from the [Releases Tab](https://github.com/KOFiblto/Rigol-Digital/releases)
+  3. Run `Install-Rigol.bat` and wait for the installation to complete.  
+
+</details> 
+
+
+<details>
+  <summary><b>Install Rigol-Digital manually (Git)</b></summary>
+  
+
+  1. Install Git (Skip if already installed)
+
+  - Download Git from here: [https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)  
+  - Run the downloaded `.exe` file.  
+
+  2. Choose a directory for the project (e.g., `C:\tools`).  
+  3. Open a terminal in that directory:  
      - Right-click inside the folder -> **"Show more Options"** -> **"Open GIT Bash here"**.  
-  5. Run the following command:  
+  4. Run the following command:  
 
      ```bash
      git clone https://github.com/KOFiblto/Rigol-Digital
      ```
 
-  6. Run `Install.bat` and wait for the installation to complete.  
+  5. Run `Install.bat` and wait for the installation to complete.  
 
 </details> 
 
 <details>
-  <summary><b>Install Rigol-Digital without Git</b></summary>
+  <summary><b>Install Rigol-Digital manually (No Git)</b></summary>
 
   1. Go to the Release Tab of this Github and search for the latest working release ([here](https://github.com/KOFiblto/Rigol-Digital/releases/tag/WORKING))
   2. Download the zip File
