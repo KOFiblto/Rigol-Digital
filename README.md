@@ -1,15 +1,18 @@
-# Free Custom Version of AlexZettler's Rigol1000z Repository
+## Free Custom Version of AlexZettler's Rigol1000z Repository
 
-This is my custom version, for private use, of AlexZettler's repository, [Rigol1000z](https://github.com/AlexZettler/Rigol1000z), which is a fork of jeanyvesb9's repository [Rigol1000z](https://github.com/jeanyvesb9/Rigol1000z), which is a fork of the original from jtambasco [RigolOscilloscope](https://github.com/jtambasco/RigolOscilloscope).  
+This is my custom version, for private use, of AlexZettler's repository, [Rigol1000z](https://github.com/AlexZettler/Rigol1000z), which is a fork of jeanyvesb9's repository [Rigol1000z](https://github.com/jeanyvesb9/Rigol1000z), which is a fork of the original from jtambasco [RigolOscilloscope](https://github.com/jtambasco/RigolOscilloscope).
 
-It features:  
+
+---
+## Additions to AlexZettler's repository
+Our class was asked to install AlexZettler's repository, but many in our class had difficulties installing it. So I decided to write Batch-Scripts to make the installation more beginner friendly and the usage easier. 
 - `Install.bat` to install all dependencies  
 - `Change_IP.bat` to change the IP  
-- `Run.bat` to start the program  
----
+- `Run.bat` to start the program
+- Pre-Release: Support for multiple screenshots and plotting data into `.csv` files
 
 
-## Install Guide
+### - Install Guide
 
 <details>
   <summary><b>Install Python 3.13</b>(Skip if already installed)</summary>
@@ -37,7 +40,7 @@ It features:
      git clone https://github.com/KOFiblto/Rigol-Digital
      ```
 
-  6. Run `Install.bat` and wait for the installation to complete.  
+  6. Go into the Folder, run `Install.bat` and wait for the installation to complete.  
 
 </details> 
 
@@ -53,9 +56,8 @@ It features:
 
 </details> 
 
----
 
-## Usage Guide
+### - Usage Guide
 
 <details> 
   <summary><b>Start Program</b></summary>
