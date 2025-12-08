@@ -1,11 +1,14 @@
-## Free Custom Version of AlexZettler's Rigol1000z Repository
+## Rigol1000z (Custom Wrapper)
 
-This is my custom version, for private use, of AlexZettler's repository, [Rigol1000z](https://github.com/AlexZettler/Rigol1000z), which is a fork of jeanyvesb9's repository [Rigol1000z](https://github.com/jeanyvesb9/Rigol1000z), which is a fork of the original from jtambasco [RigolOscilloscope](https://github.com/jtambasco/RigolOscilloscope).
+This is my custom version, designed for private use and educational purposes. It includes custom batch scripts to simplify installation and configuration for beginners.
+* **jtambasco** created the base project: [RigolOscilloscope](https://github.com/jtambasco/RigolOscilloscope)
+    * **jeanyvesb9** forked from **jtambasco**: [Rigol1000z](https://github.com/jeanyvesb9/Rigol1000z)
+        * **AlexZettler** forked from **jeanyvesb9**: [Rigol1000z](https://github.com/AlexZettler/Rigol1000z)
 
 
 ---
 ## Additions to AlexZettler's repository
-Our class was asked to install AlexZettler's repository, but many in our class had difficulties installing it. So I decided to write Batch-Scripts to make the installation more beginner friendly and the usage easier. 
+Our class was asked to install AlexZettler's repository, but many in our class had difficulties installing it. So I decided to write Batch-Scripts to make streamline the installation simplify the usage. 
 - `Install.bat` to install all dependencies  
 - `Change_IP.bat` to change the IP  
 - `Run.bat` to start the program
